@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #f5e7dc91; 
+            border: 2px solid black; 
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #3d3d3d;
+            font-size: 16px;
+            margin-left: 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ccc; 
+            color: #3d3d3d;
+        }
+
+        .container {
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid black;
+            max-width: 600px;
+            background-color: rgba(206, 206, 206, 0.562); 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+
+        h1 {
+            color: #3d3d3d;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #3d3d3d;
+            background-color: #f5e7dc; 
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e1d0c1;
+            color: #3d3d3d;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="HOME.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="contact.html">Contacts</a>
+    </div>
+    <div class="container" id="about-me">
+        <img src="ayok.jfif" alt="Profile Photo" class="profile-photo">
+        <h1>ABOUT ME</h1>
+        <p>Hi, I'm Reyalyn Tulio Ayok. I am 21 years old, currently a 3rd-year college student taking a Bachelor of Science in Information Technology. I live in Longos, Malabon City. I love reading and writing novels.</p>
+        <a href="Learnmore.html" class="btn">Learn More</a>
+    </div>
+
+</body>
+</html>

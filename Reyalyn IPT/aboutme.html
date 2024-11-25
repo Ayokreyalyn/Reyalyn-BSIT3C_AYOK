@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Memories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 15px; 
+            flex-wrap: wrap; 
+            padding: 10px;
+        }
+
+        .cardboard {
+            background-color: rgba(245, 245, 245, 0.8); 
+            border: 2px solid black; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+            padding: 10px;
+            z-index: 1; 
+            width: 30%; 
+            max-width: 200px; 
+        }
+
+        .cardboard img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid black;
+        }
+
+        .cardboard-content {
+            padding: 10px;
+        }
+
+        .cardboard h2 {
+            color: #333;
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .cardboard p {
+            color: #555;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                gap: 10px;
+            }
+
+            .cardboard {
+                width: 45%; 
+            }
+
+            .cardboard h2 {
+                font-size: 16px;
+            }
+
+            .cardboard p {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cardboard {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>MY FAVORITE IMAGES OF LIFE</h1>
+    <div class="container">
+        <div class="cardboard">
+            <img src="fam.jpg" alt="Left Description">
+            <div class="cardboard-content">
+                <h2>MY FAMILY</h2>
+                <p>
+                    This family picture isn’t just a snapshot; it’s a time capsule of love, laughter, and unspoken bonds. It reminds me where I come from and the people who shaped my heart. A moment frozen in time, yet forever alive in my soul.
+                </p>
+            </div>
+        </div>
+        <div class="cardboard">
+            <img src="baby.png" alt="Descriptive Text">
+            <div class="cardboard-content">
+                <h2>BABY ME</h2>
+                <p>
+                    This is me, Reyalyn Tulio Ayok, at just 6 months old. I chose to share this photo because it’s my favorite among all the pictures I’ve ever taken, even more than my recent ones. This image holds a special place in my heart because it captures a moment from when I was just beginning to explore and become aware of the world around me.
+                </p>
+            </div>
+        </div>
+        <div class="cardboard">
+            <img src="me.png" alt="Right Description">
+            <div class="cardboard-content">
+                <h2>THE PRESENT ME</h2>
+                <p>
+                    The present me is a testament to growth, resilience, and self-love. Every scar, smile, and lesson brought me here. I cherish this version of myself because it’s proof that I’m not just surviving—I’m thriving.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

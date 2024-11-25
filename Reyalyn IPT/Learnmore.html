@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('bg.jpg'); 
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin: 20px 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      max-width: 1200px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      grid-template-rows: auto auto; 
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .photo-card {
+      width: 70mm;
+      border: 2px solid black;
+      background: rgba(255, 255, 255, 0.1); 
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 105mm;
+      object-fit: cover;
+      border-bottom: 2px solid black;
+    }
+
+    .description {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .side-card {
+      width: 300px;
+      border: 2px solid black;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      text-align: left;
+      color: #fff;
+    }
+
+    .side-card h2 {
+      margin-top: 0;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <h1>MY BOOK NOVELS</h1>
+  <div class="container">
+    <div class="gallery">
+      <div class="photo-card">
+        <img src="book1.jpg" alt="Photo 1">
+        <div class="description">"I put this here because it is the very first novel I wrote at the age of 12. It’s about two complete strangers who hate each other at first sight but gradually fall in love."</div>
+      </div>
+      <div class="photo-card">
+        <img src="book2.jpg" alt="Photo 2">
+        <div class="description">"A tale of irresistible allure and dark desires, this novel follows a character who seeks revenge through the art of seduction. As passion intertwines with manipulation, the line between love and vengeance blurs, leading to a dangerous game where hearts are both won and shattered."</div>
+      </div>
+      <div class="photo-card">
+        <img src="book3.jpg" alt="Photo 3">
+        <div class="description">"This novel explores the intense and turbulent lives of truculent twins, whose fiery personalities and unrelenting conflict push them to the edge."</div>
+      </div>
+      <div class="photo-card">
+        <img src="book4.jpg" alt="Photo 4">
+        <div class="description">"A gripping tale of passion and consequences, this novel delves into the complexities of a forbidden affair. Bound by desire yet haunted by guilt, the characters navigate a web of secrets, betrayal, and the heavy price of their choices."</div>
+      </div>
+      <div class="photo-card">
+        <img src="book5.jpg" alt="Photo 5">
+        <div class="description">"This novel celebrates the true essence of amity, exploring the deep and unwavering bonds of friendship. Through trials and triumphs, the characters show how loyalty, trust, and understanding can form a connection that transcends time, distance, and adversity."</div>
+      </div>
+    <div class="side-card">
+      <h2>About This Page</h2>
+      <p>
+        Welcome to my book novels showcase! This page highlights a collection of amazing novels with visual previews and descriptions for each book. Explore the top row featuring three unique books and the second row with two additional masterpieces. Dive into the literary world and enjoy!
+      </p>
+    </div>
+</body>
+</html>
+
